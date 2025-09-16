@@ -1,0 +1,375 @@
+  Object Name     :  .MODEL_1.JOINT_1
+  Object Type     :  Translational Joint
+  Parent Type     :  Model
+  Adams ID        :  1
+  Active          :  NO_OPINION
+  I Marker          : .MODEL_1.PART2.MARKER_9
+  J Marker          : .MODEL_1.ground.MARKER_10
+  Initial Conditions
+    Displacement         : NOT SET
+    Velocity             : NOT SET
+
+
+  Object Name     :  .MODEL_1.PART2.MARKER_1
+  Object Type     :  Marker
+  Parent Type     :  Part
+  Adams ID        :  1
+  Active          :  NO_OPINION
+  Local  :
+      Location    : 0.0, 0.0, -100.0 (mm, mm, mm)
+      Orientation : 0.0, 0.0, 0.0 (deg)
+  Global :
+      Location    : 0.0, 0.0, -100.0 (mm, mm, mm)
+      Orientation : 0.0, 0.0, 0.0 (deg)
+
+
+  Object Name     :  .MODEL_1.Driven_1.gear_part.gear_geometry
+  Object Type     :  Shell
+  Parent Type     :  Part
+  Reference Marker       : .MODEL_1.Driven_1.gear_part.gear_geometry_ref
+  Number of Points       : 2322
+  Number of Connections  : 3360
+  Polygons in Tristrips  : 87 percent
+  File Name              : MODEL_1_Driven_1_geo.shl
+  Scale Factor           : 1.0E-03
+  Read Only              : False
+  Wireframe Only         : No
+
+
+  Object Name     :  .MODEL_1.Driven_1.density
+  Object Type     :  Variable
+  Parent Type     :  ac_am_cylindrical_gear_element
+  Real Value(s)   : 7.801E-06 kg/mm**3
+  Units           : density
+
+  Comment String  : None
+
+  Referenced by   :
+  .MODEL_1.Driven_1 (ac_am_cylindrical_gear_element)
+ 
+
+
+  Object Name     :  .MODEL_1.Driven_1.gear_part.gear_geometry
+  Object Type     :  Shell
+  Parent Type     :  Part
+  Reference Marker       : .MODEL_1.Driven_1.gear_part.gear_geometry_ref
+  Number of Points       : 2322
+  Number of Connections  : 3360
+  Polygons in Tristrips  : 87 percent
+  File Name              : MODEL_1_Driven_1_geo.shl
+  Scale Factor           : 1.0E-03
+  Read Only              : False
+  Wireframe Only         : No
+
+
+  Object Name     :  .MODEL_1.Driven_1.gear_fixed
+  Object Type     :  Fixed Joint
+  Parent Type     :  ac_am_cylindrical_gear_element
+  Adams ID        :  6
+  Active          :  OFF
+  I Marker          : .MODEL_1.Driven_1.gear_part.gear_attachment_ref
+  J Marker          : .MODEL_1.ground.Driven_1_Ref_2  (.MODEL_1.Driven_1.ref_marker)
+
+
+  Object Name     :  .MODEL_1.steel
+  Object Type     :  Material
+  Parent Type     :  Model
+  Adams ID        :  1
+  Active          :  NO_OPINION
+  Young's Modulus          : 2.07E+05 (2.07E+11(Newton/meter**2)) newton/mm**2
+  Poisson's Ratio          : 0.29
+  Density                  : 7.801E-06 (7801.0(kg/meter**3)) kg/mm**3
+
+
+  Object Name     :  .MODEL_1.Analysis_flags
+  Object Type     :  ADAMS_Analysis_Flags
+  Parent Type     :  Model
+
+Numerical Integration Settings For Model: .MODEL_1
+    Integrator Type                  : gstiff
+    Formulation                      : i3
+    Error Tolerance                  : 1.0E-03
+    Pattern For Jacobian             : Yes, No, No, No, Yes, No, No, No, Yes, No
+    Maxit Corrector Iterations       : 10
+    Hinit Time Step                  : 0.0 sec
+    Hmin Time Step                   : 0.0 sec
+    Hmax Time Step                   : 0.0 sec
+    Adaptivity                       : 0.0
+    Scale                            : 1.0, 1.0, 1.0E-03
+    KMax Integrator Order            : 6
+    Interpolate                      : No
+    Reconcile                        : all
+    Repartition Threshold            : 1.0E-02, 1.0E+12
+    Corrector                        : original
+    Alpha                            : -0.3
+    Beta                             : 0.36
+    Gamma                            : 0.7
+    Fixed Iterations                 : Off
+    Hratio                           : None
+    Max Error                        : None
+
+  Lagrange Parameter Settings
+    Acceleration and Lagrange Multiplier Parameters:
+        Relative Error               : 0.0
+        Absolute Error               : 0.0
+        Maximum Iterations           : 0
+        Pattern For Jacobian         : Yes, No, No, No, Yes, No, No, No, Yes, No
+    Augmented Lagrangian Factors
+        Weighting Factor             : 0.0
+        Damping Factor               : 0.0
+        Common Value for Natural     : 0.0
+        Frequencies
+    Watch Lagrangian Perf            : 
+                                       NO_CONDITION
+                                       NO_ERROR_IN_ITERATION
+                                       NO_FAILURE_IN_ITERATION
+
+Equilibrium Analysis Settings For Model: .MODEL_1
+    Dynamic                 : No
+    Alimit                  : 10.0 deg
+    Error                   : 1.0E-04
+    Imbalance               : 1.0E-04 newton
+    Maxit                   : 25
+    Pattern For Jacobian    : Yes, Yes, Yes, Yes, Yes, Yes, Yes, Yes, Yes, Yes
+    Stability               : 1.0E-05
+    Tlimit                  : 20.0
+    Global Damping          : 0.0
+    Max Settling Time       : 100.0 sec
+    Acceleration Error      : 2.0E-02
+    Kinetic Energy Error    : 2.0E-02
+    Static Method           : original
+
+Kinematics Analysis Settings For Model: .MODEL_1
+    Alimit                  : 30.0 deg
+    Error                   : 1.0E-04
+    Maxit                   : 25
+    Aerror                  : 1.0E-04
+    Amaxit                  : 25
+    Tlimit                  : 1.0E+13 mm
+    Pattern For Jacobian    : Yes, Yes, Yes, Yes, Yes, Yes, Yes, Yes, Yes, Yes
+    Apattern For Jacobian   : Yes, Yes, Yes, Yes, Yes, Yes, Yes, Yes, Yes, Yes
+
+Solver Settings For Model: .MODEL_1
+    Solver : auto
+    stability : 1.0E-02
+
+Solver Settings For Model: .MODEL_1
+
+Initial Conditions Settings For Model: .MODEL_1
+    Alimit                  : 30.0 deg
+    Error                   : 1.0E-10
+    Maxit                   : 25
+    Aerror                  : 1.0E-04
+    Amaxit                  : 25
+    Tlimit                  : 1.0E+13 mm
+    Pattern For Jacobian    : Yes, Yes, Yes, Yes, Yes, Yes, Yes, Yes, Yes, Yes
+    Apattern For Jacobian   : Yes, Yes, Yes, Yes, Yes, Yes, Yes, Yes, Yes, Yes
+
+Debug Settings For Model: .MODEL_1
+    Dump      : Off
+    Eprint    : Off
+    Verbose   : Off
+    Reqdump   : Off
+    Jmdump    : Off
+    Rhsdump   : Off
+    Dof       : Off
+    Topology  : Off
+
+Madata Settings For Model: .MODEL_1
+    Statics   : No
+    Times     : None
+    Comment   : None
+
+Output Settings For Model: .MODEL_1
+     Reqsave  : On
+     Dacsave  : Off
+     Rpcsave  : Off
+     Grsave   : on
+     Icsave   : Off
+     Teletype : Off
+     Osformat : Off
+     Fixed    : Off
+     Ypr      : Off
+     Chart    : Off
+     Print    : On
+     Dzero    : 1.0E-07
+     Vzero    : 1.0E-07
+     Azero    : 1.0E-07
+     Fzero    : 1.0E-07
+     Dscale   : 1.0, 1.0
+     Vscale   : 1.0, 1.0
+     Ascale   : 1.0, 1.0
+     Fscale   : 1.0, 1.0
+
+Preference Settings For Model: .MODEL_1
+     Contact Geometry Library  : default_library
+     Contact Faceting Tolerance: 300.0028
+     Limit Check               : none
+     Formulation               : original
+
+Results Settings For Model: .MODEL_1
+    Formatted       : Off
+    XRF             : On
+    Accelerations   : On
+    Applied Forces  : On
+    Displacements   : On
+    Reaction Forces : On
+    Velocities      : On
+    Data Structures : On
+    System Elements : On
+    Linear          : On
+    Floating Markers: On
+    Friction Summary: Off
+    Request         : On
+    Comment         : None
+
+
+
+  Object Name     :  .MODEL_1.PART2.Bearing_1_marker
+  Object Type     :  Marker
+  Parent Type     :  Part
+  Adams ID        :  45
+  Active          :  NO_OPINION
+  Local  :
+      Location    : -0.8621411461, 0.8626752744, -287.2584557503 (mm, mm, mm)
+                    (LOC_RELATIVE_TO({0.0, 0.0, 0.0}, PART2.cm))
+      Orientation : 0.0, 0.0, 0.0 (deg)
+  Global :
+      Location    : -0.8621411461, 0.8626752744, -287.2584557503 (mm, mm, mm)
+      Orientation : 0.0, 0.0, 0.0 (deg)
+
+
+  Object Name     :  .MODEL_1.PART2.SOLID1.shell
+  Object Type     :  Shell
+  Parent Type     :  Solid
+  Reference Marker       : .MODEL_1.PART2.PSMAR
+  Number of Points       : 1759
+  Number of Connections  : 3300
+  Polygons in Tristrips  : 0 percent
+  File Name              : None
+  Scale Factor           : 1.0
+  Read Only              : False
+  Wireframe Only         : No
+
+
+  Object Name     :  .MODEL_1.PART2.Bearing_1_marker
+  Object Type     :  Marker
+  Parent Type     :  Part
+  Adams ID        :  45
+  Active          :  NO_OPINION
+  Local  :
+      Location    : -0.8621411461, 0.8626752744, -287.2584557503 (mm, mm, mm)
+                    (LOC_RELATIVE_TO({0.0, 0.0, 0.0}, PART2.cm))
+      Orientation : 0.0, 0.0, 0.0 (deg)
+  Global :
+      Location    : -0.8621411461, 0.8626752744, -287.2584557503 (mm, mm, mm)
+      Orientation : 0.0, 0.0, 0.0 (deg)
+
+
+  Object Name     :  .MODEL_1.general_motion_1.motion_r1
+  Object Type     :  Point Motion
+  Parent Type     :  general_motion
+  Adams ID        :  28
+  Active          :  OFF
+  Type            : rotational
+  Time Derivative : acceleration (general_motion_1.r1_type == 0 ? 2 : general_motion_1.r1_type - 1)
+  Displacement IC : 0.0 (general_motion_1.r1_ic_disp) deg
+  Velocity IC     : 0.0 (general_motion_1.r1_ic_velo) deg/sec
+  Function        : 0 * time
+  I Marker        : .MODEL_1.PART2.MARKER_34  (.MODEL_1.general_motion_1.i_marker)
+  J Marker        : .MODEL_1.ground.MARKER_35  (.MODEL_1.general_motion_1.j_marker)
+
+
+  Object Name     :  .MODEL_1.general_motion_1.motion_r2
+  Object Type     :  Point Motion
+  Parent Type     :  general_motion
+  Adams ID        :  29
+  Active          :  OFF
+  Type            : rotational
+  Time Derivative : acceleration (general_motion_1.r2_type == 0 ? 2 : general_motion_1.r2_type - 1)
+  Displacement IC : 0.0 (general_motion_1.r2_ic_disp) deg
+  Velocity IC     : 0.0 (general_motion_1.r2_ic_velo) deg/sec
+  Function        : 0 * time
+  I Marker        : .MODEL_1.PART2.MARKER_34  (.MODEL_1.general_motion_1.i_marker)
+  J Marker        : .MODEL_1.ground.MARKER_35  (.MODEL_1.general_motion_1.j_marker)
+
+
+  Object Name     :  .MODEL_1.general_motion_1.motion_r2
+  Object Type     :  Point Motion
+  Parent Type     :  general_motion
+  Adams ID        :  29
+  Active          :  OFF
+  Type            : rotational
+  Time Derivative : acceleration (general_motion_1.r2_type == 0 ? 2 : general_motion_1.r2_type - 1)
+  Displacement IC : 0.0 (general_motion_1.r2_ic_disp) deg
+  Velocity IC     : 0.0 (general_motion_1.r2_ic_velo) deg/sec
+  Function        : 0 * time
+  I Marker        : .MODEL_1.PART2.MARKER_34  (.MODEL_1.general_motion_1.i_marker)
+  J Marker        : .MODEL_1.ground.MARKER_35  (.MODEL_1.general_motion_1.j_marker)
+
+
+  Object Name     :  .MODEL_1.general_motion_1.motion_r3
+  Object Type     :  Point Motion
+  Parent Type     :  general_motion
+  Adams ID        :  30
+  Active          :  OFF
+  Type            : rotational
+  Time Derivative : acceleration (general_motion_1.r3_type == 0 ? 2 : general_motion_1.r3_type - 1)
+  Displacement IC : 0.0 (general_motion_1.r3_ic_disp) deg
+  Velocity IC     : 0.0 (general_motion_1.r3_ic_velo) deg/sec
+  Function        : 0 * time
+  I Marker        : .MODEL_1.PART2.MARKER_34  (.MODEL_1.general_motion_1.i_marker)
+  J Marker        : .MODEL_1.ground.MARKER_35  (.MODEL_1.general_motion_1.j_marker)
+
+
+  Object Name     :  .MODEL_1.general_motion_1.motion_t1
+  Object Type     :  Point Motion
+  Parent Type     :  general_motion
+  Adams ID        :  25
+  Active          :  OFF
+  Type            : translational
+  Time Derivative : acceleration (general_motion_1.t1_type == 0 ? 2 : general_motion_1.t1_type - 1)
+  Displacement IC : 0.0 (general_motion_1.t1_ic_disp) mm
+  Velocity IC     : 0.0 (general_motion_1.t1_ic_velo) mm/sec
+  Function        : 0 * time
+  I Marker        : .MODEL_1.PART2.MARKER_34  (.MODEL_1.general_motion_1.i_marker)
+  J Marker        : .MODEL_1.ground.MARKER_35  (.MODEL_1.general_motion_1.j_marker)
+
+
+  Object Name     :  .MODEL_1.general_motion_1.allmotions_inactive
+  Object Type     :  Variable
+  Parent Type     :  general_motion
+  Integer Value(s): 1 (general_motion_1.motion_t1_active && general_motion_1.motion_t2_active && general_motion_1.motion_t3_active && general_motion_1.motion_r1_active && general_motion_1.motion_r2_active && general_motion_1.motion_r3_active)
+
+  Comment String  : None
+
+  Referenced by   :
+  .MODEL_1.general_motion_1 (general_motion)
+ 
+
+
+  Object Name     :  .MODEL_1.general_motion_1.allmotions_inactive
+  Object Type     :  Variable
+  Parent Type     :  general_motion
+  Integer Value(s): 1 (general_motion_1.motion_t1_active && general_motion_1.motion_t2_active && general_motion_1.motion_t3_active && general_motion_1.motion_r1_active && general_motion_1.motion_r2_active && general_motion_1.motion_r3_active)
+
+  Comment String  : None
+
+  Referenced by   :
+  .MODEL_1.general_motion_1 (general_motion)
+ 
+
+
+  Object Name     :  .MODEL_1.general_motion_1.t2_ic_velo
+  Object Type     :  Variable
+  Parent Type     :  general_motion
+  Real Value(s)   : 0.0 NO UNITS
+  Units           : no_units
+
+  Comment String  : None
+
+  Referenced by   :
+  .MODEL_1.general_motion_1 (general_motion)
+ 
+
+
